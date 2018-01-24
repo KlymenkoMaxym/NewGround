@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Max" verbose="1" parallel="false">
+    <test name="MaxTestove">
+        <classes>
+            <class name="tests.SearchTests">
+                <methods>
+                    <include name="testMemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
