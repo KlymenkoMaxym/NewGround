@@ -4,16 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class StartPage extends BasePage {
 
-    public StartPage() {
-        PageFactory.initElements(this.driver, this);
-    }
-
-    @FindBy(xpath="//span[@class='menu_lang']/a")
+    @FindBy(xpath = "//span[@class='menu_lang']/a")
     private WebElement switchLanguageLink;
 
     @FindBy(xpath = "//a[contains(text(), 'Электротехника')]")
@@ -29,7 +24,7 @@ public class StartPage extends BasePage {
         return "LV";
     }
 
-    public BasePage goToElectricalEngineeringSection () {
+    public BasePage goToElectricalEngineeringSection() {
 
         electricalEngineeringLinkRu.click();
 

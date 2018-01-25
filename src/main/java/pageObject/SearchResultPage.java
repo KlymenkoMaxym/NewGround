@@ -31,10 +31,6 @@ public class SearchResultPage extends BasePage {
 
     final Random random = new Random();
 
-    public SearchResultPage () {
-        PageFactory.initElements(this.driver, this);
-    }
-
     public void chooseRandomProducts(int count) {
         List<Integer> numbersGenerated = getRandomNumber(count, searchResult.size());
 

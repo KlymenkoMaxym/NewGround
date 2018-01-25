@@ -22,10 +22,6 @@ public class SearchPage extends BasePage {
     private WebElement maxPriceInput;
 
 
-    public SearchPage() {
-        PageFactory.initElements(this.driver, this);
-    }
-
     public void fillMinPrice(int minPrice) {
         minPriceInput.clear();
         minPriceInput.sendKeys(String.valueOf(minPrice));

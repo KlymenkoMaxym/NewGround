@@ -12,10 +12,6 @@ public class ElectricalEngineeringPage extends BasePage{
     @FindBy(xpath="//a[contains(text(), 'Поиск')]")
     private WebElement searchLink;
 
-    public ElectricalEngineeringPage() {
-        PageFactory.initElements(this.driver, this);
-    }
-
     public BasePage goToSeachPage() {
 
         searchLink.click();
